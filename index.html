@@ -8,12 +8,21 @@
 html, body, h1, ul{
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 .header{
   color: white;
-  padding: 150px 0;
+  padding: 100px 0;
   text-align: center;
   background: #50E3C2;
+}
+
+.header h1{
+  font-size: 900%;
+  font-family: monospace;
+  text-transform: uppercase;
 }
 
 .navbar{
@@ -27,11 +36,24 @@ html, body, h1, ul{
 .navbar a{
   color: white;
 }
+
+.btn{
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid white;
+  text-transform: uppercase;
+}
+.btn-download{
+  margin-top: 20px;
+}
 </style>
 </head>
 <body>
   <header class="header" >
-    <h1>KELP</h1>
+    <h1>Kelp</h1>
     <p>dead simple nodejs http(s) web framework</p>
     <nav>
       <ul class="navbar" >
@@ -39,29 +61,27 @@ html, body, h1, ul{
         <li><a href="http://kelpjs.github.io">Get Started</a></li>
         <li>
           <a href="https://github.com/song940/kelp/stargazers">
-            <github repo="song940/kelp" key="stargazers_count" ></github> Stargazers
+            Stargazers<github repo="song940/kelp" key="stargazers_count" />
           </a>
         </li>
         <li>
           <a href="https://github.com/song940/kelp/forks">
-            <github repo="song940/kelp" key="forks_count" ></github> Forks
+            Forks<github repo="song940/kelp" key="forks_count" />
           </a>
         </li>
       </ul>
     </nav>
+    <a href="#" class="btn btn-download">Download</a>
   </header>
   <section class="content" >
-    
-    
+
   </section>
-  <footer class="footer" >
-    
-  </footer>
+  <footer class="footer" ></footer>
 </body>
 <script>
 /**
  * Github Widgets
- * 
+ *
  * @author lsong
  * <a href="https://github.com/song940/kelp/stargazers">
  *   <github repo="song940/kelp" key="stargazers_count" ></github> Stargazers
@@ -83,6 +103,5 @@ html, body, h1, ul{
     })(elements[i]);
   }
 })(document.getElementsByTagName('github'));
-
 </script>
 </html>
