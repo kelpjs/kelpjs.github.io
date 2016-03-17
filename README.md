@@ -1,7 +1,7 @@
 kelp-www
 ========
 
-http://kelp.lsong.org
+https://kelpjs.github.io
 
 ## LICENSE
 
